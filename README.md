@@ -1,4 +1,4 @@
-# Argo CD and Keptn Demo
+# Argo CD and Keptn Demo for ArgoCon 2024
 
 ## Bootstrapping Argo CD
 ```
