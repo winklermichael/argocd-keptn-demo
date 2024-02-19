@@ -10,7 +10,7 @@ spec:
   project: default
   source:
     path: apps
-    repoURL: https://github.com/morey-tech/argocd-keptn-demo.git
+    repoURL: https://github.com/grabnerandi/argocd-keptn-demo.git
     targetRevision: main
   syncPolicy:
     automated:

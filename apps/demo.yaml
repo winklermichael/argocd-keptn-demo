@@ -9,7 +9,7 @@ spec:
     namespace: demo
   source:
     path: demo/
-    repoURL: https://github.com/morey-tech/argocd-keptn-demo.git
+    repoURL: https://github.com/grabnerandi/argocd-keptn-demo.git
     targetRevision: main
   project: default
   syncPolicy:
