@@ -22,6 +22,12 @@ Or:
 cat ~/argo-cd-admin-password.txt
 ```
 
+Or: 
+```
+ARGOCDPWD=$(kubectl -n argocd get secret argocd-initial-admin-secret -o jsonpath="{.data.password}" | base64 -d)
+echo $ARGOCDPWD
+```
+
 ## Accessing the Grafana UI
 Navigate to [https://localhost:8082/](https://localhost:8082/) on the machine with the `kind` cluster running (the dev container also forwards this port).
 
