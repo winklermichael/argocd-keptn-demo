@@ -42,5 +42,12 @@
 		8080,
 		8081,
 		8082
-	]
+	],
+
+	// add labels
+	"portsAttributes": {
+		"8080": { "label": "ArgoCD", "protocol": "https" },
+		"8081": { "label": "Keptn Metrics Endpoint" },
+		"8082": { "label": "Grafana" }
+	}
 }
