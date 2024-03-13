@@ -15,3 +15,6 @@ helmCharts:
   repo: https://charts.jetstack.io
   valuesInline:
     installCRDs: true
+    global:
+      leaderElection:
+        namespace: cert-manager
