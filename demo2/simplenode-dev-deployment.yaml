@@ -96,4 +96,4 @@ spec:
     targetPort: 8080
     nodePort: 32000
   selector:
-    app: simplenode
+    app.kubernetes.io/name: simplenode
