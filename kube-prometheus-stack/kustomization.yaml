@@ -6,6 +6,7 @@ namespace: monitoring
   
 resources:
 - ./datasources.yaml
+- ./service.yaml
 - https://raw.githubusercontent.com/keptn/lifecycle-toolkit/keptn-v0.10.0/examples/support/observability/config/prometheus/grafana-config.yaml
 - https://raw.githubusercontent.com/keptn/lifecycle-toolkit/keptn-v0.10.0/examples/support/observability/config/prometheus/grafana-dashboard-keptn-applications.yaml
 - https://raw.githubusercontent.com/keptn/lifecycle-toolkit/keptn-v0.10.0/examples/support/observability/config/prometheus/grafana-dashboard-keptn-overview.yaml
@@ -29,6 +30,3 @@ helmCharts:
             scrape_interval: 5s
             static_configs:
               - targets: ['lifecycle-operator-metrics-service.keptn-lifecycle-toolkit-system.svc.cluster.local:2222']
-
-patches:
-  - path: ./service.yaml
