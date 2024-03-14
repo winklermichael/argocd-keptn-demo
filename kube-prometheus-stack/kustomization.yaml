@@ -15,6 +15,9 @@ helmCharts:
     grafana:
       adminPassword: admin
       sidecar.datasources.defaultDatasourceEnabled: false
+      service:
+        type: NodePort
+        nodePort: 31445
     prometheus:
       prometheusSpec:
         additionalScrapeConfigs:
