@@ -21,4 +21,4 @@ helmCharts:
           - job_name: "scrape_klt"
             scrape_interval: 5s
             static_configs:
-              - targets: ['lifecycle-operator-metrics-service.keptn-lifecycle-toolkit-system.svc.cluster.local:2222']
+              - targets: ['lifecycle-operator-metrics-service.keptn-lifecycle-toolkit-system.svc.cluster.local:2222','metrics-operator-service.keptn-lifecycle-toolkit-system.svc.cluster.local:9999']

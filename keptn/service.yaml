@@ -10,3 +10,16 @@ spec:
     targetPort: 8080
     nodePort: 31444
   type: NodePort
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: metrics-operator-service
+spec:
+  ports:
+  - name: metrics
+    port: 9999
+    protocol: TCP
+    targetPort: 8080
+    nodePort: 31446
+  type: NodePort
