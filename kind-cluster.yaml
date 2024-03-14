@@ -13,3 +13,5 @@ nodes:
       hostPort: 8081
     - containerPort: 31445  # NodePort for Grafana `observability-stack-grafana` service (dashboards).
       hostPort: 8082
+    - containerPort: 31446  # NodePort for demo2 `simplenode` service.
+      hostPort: 8083
