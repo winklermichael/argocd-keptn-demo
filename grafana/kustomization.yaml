@@ -9,4 +9,3 @@ resources:
 - ./dashboards/grafana-dashboard-keptn-overview.yaml
 - ./dashboards/grafana-dashboard-keptn-workloads.yaml
 - ./datasources.yaml
-- ./service.yaml
