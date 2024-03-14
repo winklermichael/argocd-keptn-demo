@@ -5,9 +5,8 @@ metadata:
 namespace: monitoring
 
 resources:
-- https://raw.githubusercontent.com/keptn/lifecycle-toolkit/keptn-v0.10.0/examples/support/observability/config/prometheus/grafana-config.yaml
-- https://raw.githubusercontent.com/keptn/lifecycle-toolkit/keptn-v0.10.0/examples/support/observability/config/prometheus/grafana-dashboard-keptn-applications.yaml
-- https://raw.githubusercontent.com/keptn/lifecycle-toolkit/keptn-v0.10.0/examples/support/observability/config/prometheus/grafana-dashboard-keptn-overview.yaml
-- https://raw.githubusercontent.com/keptn/lifecycle-toolkit/keptn-v0.10.0/examples/support/observability/config/prometheus/grafana-dashboard-keptn-workloads.yaml
+- https://raw.githubusercontent.com/keptn/lifecycle-toolkit/main/dashboards/grafana/configmap/grafana-dashboard-keptn-applications.yaml
+- https://raw.githubusercontent.com/keptn/lifecycle-toolkit/main/dashboards/grafana/configmap/grafana-dashboard-keptn-overview.yaml
+- https://raw.githubusercontent.com/keptn/lifecycle-toolkit/main/dashboards/grafana/configmap/grafana-dashboard-keptn-workloads.yaml
 - ./datasources.yaml
 - ./service.yaml
