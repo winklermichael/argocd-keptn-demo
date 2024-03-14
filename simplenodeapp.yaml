@@ -1,7 +1,7 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: demo2
+  name: simplenodeapp
   namespace: argocd
 spec:
   destination:
@@ -9,7 +9,7 @@ spec:
     name: in-cluster
   project: default
   source:
-    path: demo2
+    path: simplenodeapp
     repoURL: https://github.com/grabnerandi/argocd-keptn-demo.git
     targetRevision: main
   syncPolicy:
