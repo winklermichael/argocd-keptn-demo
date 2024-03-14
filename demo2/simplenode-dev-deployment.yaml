@@ -11,7 +11,7 @@ spec:
     type: RollingUpdate
   selector:
     matchLabels:
-      app: simplenode
+      app.kubernetes.io/name: simplenode
   template:
     metadata:
       labels:
