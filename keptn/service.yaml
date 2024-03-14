@@ -7,7 +7,7 @@ spec:
   - name: metrics
     port: 2222
     protocol: TCP
-    targetPort: 8080
+    targetPort: 2222
     nodePort: 31444
   type: NodePort
 ---
@@ -20,6 +20,6 @@ spec:
   - name: metrics
     port: 9999
     protocol: TCP
-    targetPort: 8080
+    targetPort: 9999
     nodePort: 31446
   type: NodePort
