@@ -4,14 +4,6 @@ metadata:
   name: kube-prometheus-stack
 namespace: monitoring
   
-resources:
-- ./datasources.yaml
-- ./service.yaml
-- https://raw.githubusercontent.com/keptn/lifecycle-toolkit/keptn-v0.10.0/examples/support/observability/config/prometheus/grafana-config.yaml
-- https://raw.githubusercontent.com/keptn/lifecycle-toolkit/keptn-v0.10.0/examples/support/observability/config/prometheus/grafana-dashboard-keptn-applications.yaml
-- https://raw.githubusercontent.com/keptn/lifecycle-toolkit/keptn-v0.10.0/examples/support/observability/config/prometheus/grafana-dashboard-keptn-overview.yaml
-- https://raw.githubusercontent.com/keptn/lifecycle-toolkit/keptn-v0.10.0/examples/support/observability/config/prometheus/grafana-dashboard-keptn-workloads.yaml
-
 helmCharts:
 - name: kube-prometheus-stack
   releaseName: observability-stack

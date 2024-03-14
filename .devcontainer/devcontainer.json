@@ -46,13 +46,15 @@
 	"forwardPorts": [
 		8080,
 		8081,
-		8082
+		8082,
+		8083
 	],
 
 	// add labels
 	"portsAttributes": {
 		"8080": { "label": "ArgoCD", "protocol": "https" },
 		"8081": { "label": "Keptn Metrics Endpoint" },
-		"8082": { "label": "Grafana" }
+		"8082": { "label": "Grafana" },
+		"8083": { "label": "Demo2" }
 	}
 }
