@@ -11,7 +11,7 @@ spec:
     type: RollingUpdate
   selector:
     matchLabels:
-      app.kubernetes.io/name: simplenode
+      app.kubernetes.io/name: simplenodeservice
   template:
     metadata:
       labels:
@@ -96,4 +96,4 @@ spec:
     targetPort: 8080
     nodePort: 32000
   selector:
-    app.kubernetes.io/name: simplenode
+    app.kubernetes.io/name: simplenodeservice
