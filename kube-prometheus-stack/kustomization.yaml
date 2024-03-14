@@ -4,9 +4,6 @@ metadata:
   name: kube-prometheus-stack
 namespace: monitoring
 
-patches:
-  - path: ./service.yaml
-
 helmCharts:
 - name: kube-prometheus-stack
   releaseName: observability-stack
