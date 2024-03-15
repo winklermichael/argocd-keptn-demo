@@ -85,3 +85,12 @@ kubectl apply -f simplenodeapp.yaml
 kubectl apply -f podtatoheadapp.yaml
 ```
 
+## Some screenshots from traces and argocd on the sample apps
+
+![](./images/argocd_simplenode.png)
+
+![](./images/jaeger_simplenode_trace.png)
+
+![](./images/argocd_podtatohead.png)
+
+![](./images/jaeger_podtatohead_trace.png)
