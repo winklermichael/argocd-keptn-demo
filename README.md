@@ -75,3 +75,13 @@ kubectl -n keptn-lifecycle-toolkit-system port-forward svc/$SERVICE 8081:2222
 > 
 > Look for metrics starting with keptn_
 
+## More demo apps
+
+> You can deploy two additional demo applications provided by this repository
+> Simplenode (single node.js based microservice) and [Podtatohead](https://github.com/podtato-head) (the sample app of TAG AppDelivery)
+
+```
+kubectl apply -f simplenodeapp.yaml
+kubectl apply -f podtatoheadapp.yaml
+```
+

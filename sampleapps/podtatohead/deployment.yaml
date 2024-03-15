@@ -12,6 +12,10 @@ metadata:
   name: podtato-head-frontend
   namespace: podtato-kubectl
 spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app.kubernetes.io/name: podtato-head-frontend
   template:
     metadata:
       labels:
@@ -30,6 +34,9 @@ metadata:
   namespace: podtato-kubectl
 spec:
   replicas: 1
+  selector:
+    matchLabels:
+      app.kubernetes.io/name: podtato-head-hat
   template:
     metadata:
       labels:
