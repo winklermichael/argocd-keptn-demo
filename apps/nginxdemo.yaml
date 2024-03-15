@@ -2,15 +2,15 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: demo
+  name: nginxdemo
   annotations:
     argocd.argoproj.io/sync-wave: "5"
 spec:
   destination:
     name: in-cluster
-    namespace: demo
+    namespace: nginxdemo
   source:
-    path: demo/
+    path: samplteapps/nginxdemo
     repoURL: https://github.com/grabnerandi/argocd-keptn-demo.git
     targetRevision: main
   project: default
