@@ -29,7 +29,7 @@ spec:
         #   app.kubernetes.io/version      
         app.kubernetes.io/name: simplenodeservice
         app.kubernetes.io/part-of: simplenode
-        app.kubernetes.io/version: 1.0.2
+        app.kubernetes.io/version: 2.0.2
       annotations:
         # keptn.sh/pre-deployment-evaluations: evaluate-dependencies
         # keptn.sh/pre-deployment-tasks: notify
@@ -38,7 +38,7 @@ spec:
     spec:
       containers:
       - name: simplenode
-        image: "grabnerandi/simplenodeservice:1.0.2"
+        image: "grabnerandi/simplenodeservice:2.0.2"
         imagePullPolicy: IfNotPresent
         ports:
         - name: http
