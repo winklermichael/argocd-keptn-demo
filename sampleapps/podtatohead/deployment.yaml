@@ -25,7 +25,7 @@ spec:
     spec:
       containers:
         - name: podtato-head-frontend
-          image: podtato-head-frontend
+          image: ghcr.io/podtato-head-frontend
 ---
 apiVersion: apps/v1
 kind: Deployment
@@ -46,4 +46,4 @@ spec:
     spec:
       containers:
         - name: podtato-head-hat
-          image: podtato-head-hat
+          image: ghcr.io/podtato-head-hat
