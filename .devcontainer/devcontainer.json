@@ -48,7 +48,8 @@
 		8081,
 		8082,
 		8083,
-		8090
+		8090,
+		8091
 	],
 
 	// add labels
@@ -57,6 +58,7 @@
 		"8081": { "label": "Keptn Lifecycle Metrics Endpoint" },
 		"8082": { "label": "Grafana" },
 		"8083": { "label": "Keptn Metrics Server Endpoint" },
-		"8090": { "label": "Demo2" }
+		"8090": { "label": "Simpenode App" },
+		"8091": { "label": "Podtatohead App" }
 	}
 }
