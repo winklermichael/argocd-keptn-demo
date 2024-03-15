@@ -21,12 +21,12 @@ spec:
       labels:
         app.kubernetes.io/name: podtato-head-entry
         app.kubernetes.io/part-of: podtato-head
-        app.kubernetes.io/version: 0.1.0
+        app.kubernetes.io/version: 0.2.17
     spec:
       terminationGracePeriodSeconds: 5
       containers:
       - name: server
-        image: ghcr.io/podtato-head/entry:latest
+        image: ghcr.io/podtato-head/entry:0.2.17
         imagePullPolicy: Always
         ports:
         - containerPort: 9000
