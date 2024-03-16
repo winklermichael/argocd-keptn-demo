@@ -1,5 +1,21 @@
 # Argo CD and Keptn Demo for ArgoCon 2024
 
+This is the companion demo for the ArgoCon 2024 talk [Why is it taking that long? Shining the light on Application Syncs in Argo with Keptn](https://colocatedeventseu2024.sched.com/event/1YFh1/why-is-it-taking-so-long-shining-the-light-on-application-syncs-in-argo-cd-with-keptn-christian-hernandez-akuity-andreas-grabner-dynatrace)
+
+The goal of this demo is to show how Keptn creates OpenTelemetry traces and prometheus metrics to provide observability driven answers to questions like:
+* How many applications and workloads are getting deployed?
+* How long do deployments take and whats the success rate?
+* Whats the root cause of slow or failing deployments?
+
+This demo installs ArgoCD which then installs a set of platform tools such as OpenTelemetry, Jaeger, Grafana, Keptn and some demo apps to demo the observability insights Keptn provides. Here is a screenshot showing one of the apps shown in ArgoCD and the corresponding OpenTelemetry trace that gives insights into what the K8s Pod Scheduler did to fulfill the deployment request!
+
+ArgoCD showing Podtatehead application
+![](./images/argocd_podtatohead.png)
+
+Jaeger OpenTelemetry Trace in Grafana for the same application
+![](./images/jaeger_podtatohead_trace.png)
+
+
 ## Bootstrapping Argo CD
 ```
 kind create cluster --config kind-cluster.yaml
@@ -85,12 +101,9 @@ kubectl apply -f simplenodeapp.yaml
 kubectl apply -f podtatoheadapp.yaml
 ```
 
-## Some screenshots from traces and argocd on the sample apps
+## additional screenshots from this demo
 
 ![](./images/argocd_simplenode.png)
 
 ![](./images/jaeger_simplenode_trace.png)
 
-![](./images/argocd_podtatohead.png)
-
-![](./images/jaeger_podtatohead_trace.png)
