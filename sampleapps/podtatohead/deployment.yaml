@@ -62,18 +62,3 @@ spec:
           env:
             - name: PODTATO_PORT
               value: "9000"
----
-apiVersion: lifecycle.keptn.sh/v1beta1
-kind: KeptnApp
-metadata:
-  name: podtato-head
-  namespace: podtato-kubectl
-  annotations:
-    app.kubernetes.io/managed-by: "keptn"
-spec:
-  version: 1.0
-  workloads:
-    - name: podtato-head-frontend
-      version: 0.2.8
-    - name: podtato-head-hat
-      version: 0.2.8
