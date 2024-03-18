@@ -22,6 +22,9 @@ spec:
         app.kubernetes.io/name: podtato-head-entry
         app.kubernetes.io/part-of: podtato-head
         app.kubernetes.io/version: 0.2.8
+        # Keptn provides the option to add additional metadata which will be added to generated OTel traces
+        keptn.sh/metadata: "owner=grabnerandi"
+        keptn.sh/metadata: "team=argoconpower"
     spec:
       terminationGracePeriodSeconds: 5
       containers:
@@ -62,3 +65,13 @@ spec:
           env:
             - name: PODTATO_PORT
               value: "9000"
+---
+apiVersion: lifecycle.keptn.sh/v1beta1
+kind: KeptnAppContext
+metadata:
+  name: podtato-head
+  namespace: podtato-kubectl
+spec:
+  metadata:
+    commit-id: "1234"
+    author: "grabnerandi"
