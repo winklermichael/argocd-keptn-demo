@@ -15,6 +15,9 @@ ArgoCD showing Podtatehead application
 Jaeger OpenTelemetry Trace in Grafana for the same application
 ![](./images/jaeger_podtatohead_trace.png)
 
+Grafana dashboard with some deployment metrics and access to traces
+![](./images/grafana_dashboard.png)
+
 
 ## Bootstrapping Argo CD
 ```
