@@ -75,3 +75,6 @@ spec:
   metadata:
     commit-id: "1236"
     author: "grabnerandi"
+  # Keptn allows you to specify spanLinks of "parent or related" traced activities, e.g: CI, prev-stage, promotion ...
+  # spanLinks: 
+  #  - "00-XXXXXXXXXXXXXXXXXXXXXXXXXXX" 
