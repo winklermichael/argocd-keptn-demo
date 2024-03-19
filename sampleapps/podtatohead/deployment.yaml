@@ -21,7 +21,7 @@ spec:
       labels:
         app.kubernetes.io/name: podtato-head-entry
         app.kubernetes.io/part-of: podtato-head
-        app.kubernetes.io/version: 0.2.9
+        app.kubernetes.io/version: 0.2.10
         # Keptn provides the option to add additional metadata which will be added to generated OTel traces
       annotations:
         keptn.sh/metadata: "owner=grabnerandi"
@@ -73,5 +73,5 @@ metadata:
   namespace: podtato-kubectl
 spec:
   metadata:
-    commit-id: "1235"
+    commit-id: "1236"
     author: "grabnerandi"
