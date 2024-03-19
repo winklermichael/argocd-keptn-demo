@@ -21,7 +21,7 @@ spec:
       labels:
         app.kubernetes.io/name: podtato-head-entry
         app.kubernetes.io/part-of: podtato-head
-        app.kubernetes.io/version: 0.2.17
+        app.kubernetes.io/version: 0.2.9
         # Keptn provides the option to add additional metadata which will be added to generated OTel traces
       annotations:
         keptn.sh/metadata: "owner=grabnerandi"
@@ -29,7 +29,7 @@ spec:
       terminationGracePeriodSeconds: 5
       containers:
       - name: server
-        image: ghcr.io/podtato-head/entry:0.2.17  # 0.2.8-0.2.17
+        image: ghcr.io/podtato-head/entry:0.2.9  # 0.2.8-0.2.17
         imagePullPolicy: Always
         ports:
         - containerPort: 9000
@@ -53,12 +53,12 @@ spec:
       labels:
         app.kubernetes.io/name: podtato-head-hat
         app.kubernetes.io/part-of: podtato-head
-        app.kubernetes.io/version: 0.2.17
+        app.kubernetes.io/version: 0.2.9
     spec:
       terminationGracePeriodSeconds: 5
       containers:
         - name: server
-          image:  ghcr.io/podtato-head/hat:0.2.17  # 0.2.8-0.2.17
+          image:  ghcr.io/podtato-head/hat:0.2.9  # 0.2.8-0.2.17
           imagePullPolicy: Always
           ports:
             - containerPort: 9000
