@@ -2,6 +2,8 @@
 
 This is the companion demo for the ArgoCon 2024 talk [Why is it taking that long? Shining the light on Application Syncs in Argo with Keptn](https://colocatedeventseu2024.sched.com/event/1YFh1/why-is-it-taking-so-long-shining-the-light-on-application-syncs-in-argo-cd-with-keptn-christian-hernandez-akuity-andreas-grabner-dynatrace)
 
+Watch the recording of the talk on the [CNCF YouTube Channel](https://www.youtube.com/watch?v=cEv6Mjf6MQo)
+
 The goal of this demo is to show how Keptn creates OpenTelemetry traces and prometheus metrics to provide observability driven answers to questions like:
 * **How many applications** and workloads are getting deployed?
 * **How long do deployments take** and whats the success rate?
