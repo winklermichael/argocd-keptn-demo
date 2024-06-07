@@ -10,7 +10,7 @@ spec:
     name: in-cluster
     namespace: nginxdemo
   source:
-    path: samplteapps/nginxdemo
+    path: sampleapps/nginxdemo
     repoURL: https://github.com/grabnerandi/argocd-keptn-demo.git
     targetRevision: main
   project: default
