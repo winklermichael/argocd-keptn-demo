@@ -90,3 +90,13 @@ spec:
           requests:
             cpu: 100m
             memory: 200Mi
+      - name: heckoproxy
+        image: ghcr.io/heckelmann/workshop-registry/heckoproxy:v0.0.1
+        ports:
+        - containerPort: 80
+        env:
+        - name: PROXY_PORT
+          value: "80"
+        - name: FORWARDING_ADDRESS
+          value: "localhost:8080"
+        imagePullPolicy: Always            
