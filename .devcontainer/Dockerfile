@@ -19,3 +19,10 @@ RUN curl -Lo /tmp/kustomize.tar.gz https://github.com/kubernetes-sigs/kustomize/
     && tar -xvf /tmp/kustomize.tar.gz -C /tmp \
     && mv /tmp/kustomize /usr/local/bin/kustomize \
     && chmod +x /usr/local/bin/kustomize
+
+# Install k9s
+ENV K9S_VERSION=v0.32.4
+RUN curl -sSL -o /tmp/k9s.tar.gz https://github.com/derailed/k9s/releases/download/${K9S_VERSION}/k9s_Linux_amd64.tar.gz \
+    && tar -xzf /tmp/k9s.tar.gz -C /tmp \
+    && mv /tmp/k9s /usr/local/bin/k9s \
+    && chmod +x /usr/local/bin/k9s
