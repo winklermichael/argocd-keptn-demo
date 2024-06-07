@@ -8,6 +8,6 @@ spec:
     matchLabels:
       app.kubernetes.io/name: simplenodeservice
   podMetricsEndpoints:
-  - port: http
+  - port: promproxy
     interval: 5s
     scrapeTimeout: 4s
