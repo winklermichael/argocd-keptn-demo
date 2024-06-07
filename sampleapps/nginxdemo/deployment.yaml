@@ -1,7 +1,16 @@
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: nginxdemo
+  annotations:
+    keptn.sh/lifecycle-toolkit: "enabled"  # this lines tells the webhook to handle the namespace
+---
+
 apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: nginx-deployment
+  namespace: nginxdemo
   labels:
     app.kubernetes.io/name: nginx
 spec:
